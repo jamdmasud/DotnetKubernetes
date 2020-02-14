@@ -81,7 +81,7 @@ spec:
     - host: masud-website.eastus2.cloudapp.azure.com
       http:
         paths:
-          - path: /ng/(/|$)(.*)
+          - path: /ng(/|$)(.*)
             backend:
               serviceName: ng-kubernetes-service
               servicePort: 80
