@@ -75,10 +75,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - masud-website.eastus.cloudapp.azure.com
+        - masud-website.eastus2.cloudapp.azure.com
       secretName: masud-eastus-cloudapp-azure-com-staging
   rules:
-    - host: masud-website.eastus.cloudapp.azure.com
+    - host: masud-website.eastus2.cloudapp.azure.com
       http:
         paths:
           - path: /(.*)
