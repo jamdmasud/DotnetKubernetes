@@ -6,3 +6,9 @@ services:
     build:
       context: .
       dockerfile: DotnetKubernetes/Dockerfile
+
+  ngkubernetes:
+    image: ${DOCKER_REGISTRY}/ngkubernetes:${VERSION:-dev}
+    build:
+      context: .
+      dockerfile: AngularKubernetes/Dockerfile
