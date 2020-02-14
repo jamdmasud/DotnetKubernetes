@@ -18,6 +18,7 @@ steps:
   - script: |
       echo "$(dockerPassword)" | docker login  $(dockerId).azurecr.io -u $(dockerUsername) --password-stdin
       docker push ${DOCKER_REGISTRY}/dotnetkubernetes:$(VERSION)
+      docker push ${DOCKER_REGISTRY}/ngkubernetes:$(VERSION)
 
     displayName: "docker publish"
 
