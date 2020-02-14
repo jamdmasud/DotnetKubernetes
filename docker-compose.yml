@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dotnetkubernetes:
+    image: ${DOCKER_REGISTRY}/dotnetkubernetes:${VERSION:-dev}
+    build:
+      context: .
+      dockerfile: DotnetKubernetes/Dockerfile
